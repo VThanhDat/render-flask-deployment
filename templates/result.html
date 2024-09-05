@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kết quả dự đoán</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        strong {
+            color: #5cb85c;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #0275d8;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        a:hover {
+            background-color: #025aa5;
+        }
+    </style>
 </head>
 <body>
-    <h2>Kết quả dự đoán của mẫu hoa Iris</h2>
-    <p>Loài hoa được dự đoán là: <strong>{{ predicted_species }}</strong></p>
-    <a href="/">Dự đoán lại</a>
+    <div class="container">
+        <h2>Kết quả dự đoán của mẫu hoa Iris</h2>
+        <p>Loài hoa được dự đoán là: <strong>{{ predicted_species }}</strong></p>
+        <a href="/">Dự đoán lại</a>
+    </div>
 </body>
 </html>
